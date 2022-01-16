@@ -1,12 +1,17 @@
+import {Route, Link, BrowserRouter as Router} from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import NoteListPage from "./pages/NoteListPage";
+import NotesListPage from "./pages/NoteListPage";
+import NotePage from "./pages/NotePage";
 function App() {
   return (
+    <Router>
     <div className="App">
       <Header />
-      <NoteListPage />
-    </div>
+        <Route path='' exact component={NotesListPage} />
+        <NotesListPage/>
+      </div>
+      </Router>
   );
 }
 
