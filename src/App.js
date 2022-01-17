@@ -6,7 +6,6 @@ import NotePage from "./pages/NotePage";
 function App() {
   return (
     <Router>
-     
       <div className="App">
           <Header />
           <Routes><Route path='' element={<NotesListPage/>}/> </Routes>
